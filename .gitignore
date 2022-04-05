@@ -1,4 +1,3 @@
-lib-cov
 *.seed
 *.log
 *.csv
@@ -25,13 +24,11 @@ coverage
 # Dependency directory
 node_modules
 
-# nyc
-.nyc_output
-
 # Editors
 .idea
 .vscode
 *.iml
+.history
 
 # OS metadata
 .DS_Store
@@ -39,5 +36,3 @@ Thumbs.db
 
 # Ignore build
 build
-
-

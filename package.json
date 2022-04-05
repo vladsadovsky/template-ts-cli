@@ -2,17 +2,17 @@
     "name": "template-ts-cli",
     "license": "MIT",
     "description": "template-ts-cli",
-    "version": "1.0.0",
-    "type": "module",
+    "version": "0.1.0",
     "main": "./src/app.ts",
     "files": [
-        "src/*"
+        "src/**/*.ts"
     ],
     "scripts": {
         "postinstall": "",
-        "prod": "node build/src/app.js",
-        "start": "ts-node ./src/app.ts",
-        "dev": "nodemon",
+        "prod": "tsc && node build/src/app.js",
+        "start": "ts-node src/app.ts",
+        "dev": "ts-node-dev --respawn -- src/app.ts",
+        "devtsc": "tsc --watch src/app.ts",
         "compile": "npm run lint && tsc",
         "lint": "eslint 'src/**/*.ts' 'test/**/*.ts'",
         "lint:fix": "eslint --fix 'src/**/*.ts' 'test/**/*.ts'",
@@ -48,9 +48,9 @@
         "husky": "^7.0.4",
         "lint-staged": "^12.3.7",
         "mocha": "^9.2.2",
-        "nodemon": "^2.0.15",
         "prettier": "^2.6.2",
         "ts-node": "^10.7.0",
+        "ts-node-dev":"^1.1.8",
         "typedoc": "^0.22.13",
         "typescript": "^4.6.3"
     }
