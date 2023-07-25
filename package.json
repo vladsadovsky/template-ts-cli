@@ -30,7 +30,8 @@
     },
     "dependencies": {
         "word-wrap": "^1.2.5",
-        "yargs": "^17.4.0"
+        "yargs": "^17.4.0",
+        "json5": "^2.2.3"
     },
     "devDependencies": {
         "@types/chai": "^4.3.0",
